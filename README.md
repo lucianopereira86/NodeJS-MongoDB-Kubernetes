@@ -191,6 +191,7 @@ Now, have fun with your CRUD running in the cloud \^\_\^.
 ## References
 
 For more informations about deployment of projects to Kubernetes and Google Cloud Platform, read these articles:
+
 https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app
 
 https://www.sitepoint.com/kubernetes-deploy-node-js-docker-app/
