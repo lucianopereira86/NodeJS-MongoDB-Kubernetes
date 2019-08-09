@@ -36,7 +36,7 @@ Basically, if you want to host your apps in the web and do not want to worry abo
 ## Kubernetes
 
 What is Kubernetes?
-Accordingly to the [Kubernetes documentation](https://cloud.google.com/kubernetes-engine/?&utm_source=google&utm_medium=cpc&utm_campaign=latam-BR-all-pt-dr-skws-all-all-trial-e-dr-1007178-LUAC0008679&utm_content=text-ad-none-none-DEV_c-CRE_325592090332-ADGP_SKWS+%7C+Multi+~+Compute+%7C+Kubernetes-KWID_43700040482195549-kwd-299675360776-userloc_1031424&utm_term=KW_kubernetes-ST_Kubernetes&gclid=Cj0KCQjwkK_qBRD8ARIsAOteukAzxctsrV53P5iaRmVcNWgVXarKph5jZQNsKNoHB7xp4U7I63liiT8aAp3aEALw_wcB&gclsrc=aw.ds):
+As the [Kubernetes documentation](https://cloud.google.com/kubernetes-engine/?&utm_source=google&utm_medium=cpc&utm_campaign=latam-BR-all-pt-dr-skws-all-all-trial-e-dr-1007178-LUAC0008679&utm_content=text-ad-none-none-DEV_c-CRE_325592090332-ADGP_SKWS+%7C+Multi+~+Compute+%7C+Kubernetes-KWID_43700040482195549-kwd-299675360776-userloc_1031424&utm_term=KW_kubernetes-ST_Kubernetes&gclid=Cj0KCQjwkK_qBRD8ARIsAOteukAzxctsrV53P5iaRmVcNWgVXarKph5jZQNsKNoHB7xp4U7I63liiT8aAp3aEALw_wcB&gclsrc=aw.ds) says:
 
 > Kubernetes Engine (GKE) is a managed, production-ready environment for deploying containerized applications (...) enables rapid application development and iteration by making it easy to deploy, update, and manage your applications and services (...) Use routine health checks to detect and replace hung, or crashed, applications inside your deployments (...) autoscaling allows you to handle increased user demand for your services, keeping them available when it matters most.
 
@@ -65,7 +65,7 @@ Wait for the cluster activation and this will be the result:
 
 Now let's create a MongoDB storage in our cluster.
 First, install the GCloud CLI in your machine by following these [docs](https://cloud.google.com/sdk/gcloud/).
-The Kubernetes also has its own CLI, so install it [here](https://kubernetes.io/docs/reference/kubectl/).
+Kubernetes also has its own CLI, so install it [here](https://kubernetes.io/docs/reference/kubectl/).
 At the root folder of this project, run the commands below:
 
 Set your project for GCloud.
