@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: nodejs
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels: # labels to select/identify the deployment
+        app: nodejs
+    spec: # pod spec
+      containers:
+        - name: nodejs
+          image: gcr.io/nodejs-mongodb-kubernetes/nodejs:v1 # image we pushed
+          ports:
+            - containerPort: 3000
