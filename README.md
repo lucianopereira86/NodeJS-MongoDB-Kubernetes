@@ -160,7 +160,8 @@ Notice the host as "mongo-0:27017". It's similar to the connection string inside
 
 Now, let's upload our NodeJS API to the cloud.
 
-Build an image from this project.
+Build an image from this project with the name "gcr.io/nodejs-mongodb-kubernetes/nodejs" and tag "v1".
+Everytime you need to update the image, change only the tag.
 
 ```batch
 docker build -t gcr.io/nodejs-mongodb-kubernetes/nodejs:v1 .
