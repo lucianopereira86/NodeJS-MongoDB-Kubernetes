@@ -102,18 +102,6 @@ Create a MongoDB volume inside the "fast" storage.
 kubectl apply -f mongo-statefulset.yaml
 ```
 
-It will appear at *Persistant Volume Claims* tab.
-
-![gcp06](/docs/gcp06.JPG)
-
-A service pod will be created at *Services & Ingress*.
-
-![gcp07](/docs/gcp07.JPG)
-
-And at *Workloads*, a Stateful Set will be created as well.
-
-![gcp08](/docs/gcp08.JPG)
-
 Check if the stateful set is ready
 
 ```batch
@@ -133,6 +121,18 @@ kubectl get pods
 Both of them must be running
 
 ![gcp10](/docs/gcp10.JPG)
+
+The MongoDB volume will appear at *Persistant Volume Claims* tab.
+
+![gcp06](/docs/gcp06.JPG)
+
+A service pod will be created at *Services & Ingress*.
+
+![gcp07](/docs/gcp07.JPG)
+
+And at *Workloads*, a Stateful Set will be created as well.
+
+![gcp08](/docs/gcp08.JPG)
 
 Connect with the MongoDB instance
 
