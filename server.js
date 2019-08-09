@@ -62,18 +62,18 @@ var applicationUrl = 'http://' + domain + ':' + port;
 swagger.configure(applicationUrl, '1.0.0');
 
 // MONGODB
-// const MongoClient = require('mongodb').MongoClient;
+const MongoClient = require('mongodb').MongoClient;
 
-// const uri = 'mongodb://127.0.0.1:27017/crud';
-// MongoClient.connect(uri, (err, client) => {
-// 	if (err) return console.log(err);
-// 	db = client.db('crud');
+const uri = 'mongodb://mongo-0.mongo:27017/crud_?'; // 'mongodb://127.0.0.1:27017/crud';
+MongoClient.connect(uri, (err, client) => {
+	if (err) return console.log(err);
+	db = client.db('crud');
 
-app.use('/api/v1/users', usersCtrl);
+	app.use('/api/v1/users', usersCtrl);
 
-app.listen(3000, function() {
-	console.log('server running on port 3000', '');
+	app.listen(3000, function() {
+		console.log('server running on port 3000', '');
+	});
 });
-// });
 
 app.set('view engine', 'ejs');
