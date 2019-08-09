@@ -79,7 +79,7 @@ Create a SSD storage on Kubernetes
 kubectl apply -f googlecloud_ssd.yaml
 ```
 
-At Storage, a SSD type storage named "fast" will be created
+At Storage > Storage classes, a SSD type storage named "fast" will be created
 
 ![gcp05](/docs/gcp05.JPG)
 
@@ -89,13 +89,15 @@ Create a MongoDB volume inside the "fast" storage.
 kubectl apply -f mongo-statefulset.yaml
 ```
 
+It will appear at Persistant Volume Claims tab
+
 ![gcp06](/docs/gcp06.JPG)
 
 A service pod will be created at Services & Ingress
 
 ![gcp07](/docs/gcp07.JPG)
 
-At Workloads, a Stateful Set will be created for persistent data
+And at Workloads, a Stateful Set will be created as well
 
 ![gcp08](/docs/gcp08.JPG)
 
@@ -104,6 +106,8 @@ Check if the stateful set is ready
 ```batch
 kubectl get statefulset
 ```
+
+There must be 1 Desired and 1 Current
 
 ![gcp09](/docs/gcp09.JPG)
 
