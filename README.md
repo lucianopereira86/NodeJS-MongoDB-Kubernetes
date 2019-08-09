@@ -102,23 +102,23 @@ Create a MongoDB volume inside the "fast" storage.
 kubectl apply -f mongo-statefulset.yaml
 ```
 
-Check if the stateful set is ready
+Check if the stateful set is ready.
 
 ```batch
 kubectl get statefulset
 ```
 
-There must be 1 Desired and 1 Current
+There must be 1 Desired and 1 Current.
 
 ![gcp09](/docs/gcp09.JPG)
 
-Check if the pods are ready
+Check if the pods are ready.
 
 ```batch
 kubectl get pods
 ```
 
-Both of them must be running
+Both of them must be running.
 
 ![gcp10](/docs/gcp10.JPG)
 
@@ -134,19 +134,19 @@ And at *Workloads*, a Stateful Set will be created as well.
 
 ![gcp08](/docs/gcp08.JPG)
 
-Connect with the MongoDB instance
+Connect with the MongoDB instance.
 
 ```batch
 kubectl exec -ti mongo-0 mongo
 ```
 
-Inside the prompt, initialize the database
+Inside the prompt, initialize the database.
 
 ```batch
 rs.initiate()
 ```
 
-Open the database configuration
+Open the database configuration.
 
 ```batch
 rs.conf()
